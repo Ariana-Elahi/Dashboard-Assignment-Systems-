@@ -13,8 +13,6 @@ def index():
 
     # Generate random data
     df = pd.read_csv("/Users/arianaelahi/Desktop/coffee_exports.csv")
-
-    # Rename columns to match your previous structure (if needed)
     df.rename(columns={
         "Export_Value_USD": "Value",
         "Country": "Category",
